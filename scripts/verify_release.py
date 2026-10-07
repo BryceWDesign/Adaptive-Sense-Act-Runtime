@@ -37,6 +37,7 @@ def main() -> int:
     (ROOT / "artifacts" / "release-verification.json").write_text(
         json.dumps(summary, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     print(json.dumps(summary, indent=2, sort_keys=True))
     return 0 if summary["passed"] else 1

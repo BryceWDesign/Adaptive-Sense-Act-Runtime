@@ -85,6 +85,8 @@ Every closed-loop cycle is stored as a canonical JSON receipt in a SHA-256 hash 
 
 `asar verify` independently recomputes sequence and chain integrity from disk.
 
+The evidence chain is tamper-evident, not tamper-proof. It is not digitally signed or externally anchored; a party with full write access could replace the complete chain and recompute its digests.
+
 ## Reference architecture
 
 ```text
@@ -143,6 +145,7 @@ py -3.13 -m venv .venv
 .\.venv\Scripts\python.exe -m asar.cli demo --evidence-out artifacts\demo.evidence.jsonl
 .\.venv\Scripts\python.exe -m asar.cli verify artifacts\demo.evidence.jsonl
 .\.venv\Scripts\python.exe scripts\verify_release.py
+.\.venv\Scripts\python.exe scripts\verify_manifest.py
 ```
 
 ### Linux / macOS
@@ -155,6 +158,7 @@ python3 -m venv .venv
 .venv/bin/python -m asar.cli demo --evidence-out artifacts/demo.evidence.jsonl
 .venv/bin/python -m asar.cli verify artifacts/demo.evidence.jsonl
 .venv/bin/python scripts/verify_release.py
+.venv/bin/python scripts/verify_manifest.py
 ```
 
 The runtime itself has no third-party runtime dependencies. `pytest` is only required to run the test suite.

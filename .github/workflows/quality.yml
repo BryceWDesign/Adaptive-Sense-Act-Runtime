@@ -21,3 +21,4 @@ jobs:
       - run: python -m ruff check .
       - run: python -m pytest -q
       - run: python scripts/verify_release.py
+      - run: python scripts/verify_manifest.py
