@@ -1,0 +1,44 @@
+{
+  "pass_count": 7,
+  "passed": true,
+  "scenario_count": 7,
+  "scenarios": [
+    {
+      "detail": "cycles=9 final_error=0.034895",
+      "name": "nominal_closed_loop_converges",
+      "passed": true
+    },
+    {
+      "detail": "uncertainty_stop",
+      "name": "high_uncertainty_denied",
+      "passed": true
+    },
+    {
+      "detail": "required_modality_invalid:pressure",
+      "name": "invalid_required_sensor_denied",
+      "passed": true
+    },
+    {
+      "detail": "{'amplitude': 0.6, 'frequency_hz': 220.0, 'duration_s': 0.75}",
+      "name": "out_of_envelope_request_bounded",
+      "passed": true
+    },
+    {
+      "detail": "uncertainty=1.0",
+      "name": "sensor_disagreement_surfaces_uncertainty",
+      "passed": true
+    },
+    {
+      "detail": "digest_mismatch",
+      "name": "evidence_tamper_detected",
+      "passed": true
+    },
+    {
+      "detail": "gain=2.5",
+      "name": "adaptation_remains_bounded",
+      "passed": true
+    }
+  ],
+  "schema": "asar-validation-v1",
+  "version": "0.1.0"
+}

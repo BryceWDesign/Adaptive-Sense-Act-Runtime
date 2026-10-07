@@ -1,0 +1,9 @@
+{
+  "compile": true,
+  "passed": true,
+  "required_files": true,
+  "schema": "asar-release-verification-v1",
+  "validation": true,
+  "validation_passed": 7,
+  "validation_scenarios": 7
+}

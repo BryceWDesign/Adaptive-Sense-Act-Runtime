@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adaptive-sense-act-runtime"
+version = "0.1.0"
+description = "Domain-neutral runtime for uncertainty-aware sensing, bounded actuation, closed-loop adaptation, and reproducible system evidence."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Bryce Lovell" }]
+keywords = [
+  "adaptive-control",
+  "sensor-fusion",
+  "bounded-actuation",
+  "runtime-assurance",
+  "closed-loop",
+  "simulation",
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "License :: Other/Proprietary License",
+  "Private :: Do Not Upload",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+  "ruff>=0.8,<1.0",
+]
+
+[project.scripts]
+asar = "asar.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = ["-ra", "--strict-markers", "--strict-config"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests", "examples", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]

@@ -1,0 +1,68 @@
+Adaptive Sense-Act Runtime Source-Available Evaluation License v1.0
+
+Copyright (c) 2026 Bryce Lovell. All rights reserved.
+
+This is a source-available evaluation license. It is not an open-source license.
+
+1. Purpose
+
+Adaptive Sense-Act Runtime (the "Software") is published so interested parties may inspect,
+run, test, and privately evaluate the Software to understand its design, behavior, technical
+fit, and potential value before contacting the copyright holder about broader rights.
+
+2. Permitted evaluation use
+
+Subject to this license, you may:
+
+(a) view and inspect the Software;
+(b) clone or download the Software for personal or internal noncommercial evaluation;
+(c) run the Software locally for noncommercial, non-operational evaluation;
+(d) make private modifications solely to evaluate technical fit, provided those modifications
+    are not distributed, deployed, sold, sublicensed, or used operationally; and
+(e) share a link to the original repository.
+
+3. Uses requiring separate written permission
+
+Unless Bryce Lovell gives prior written permission, you may not use the Software, in whole or
+in part, for commercial, production, operational, clinical, safety-critical, field-control,
+customer, consulting, contracting, procurement, hosted-service, resale, redistribution, or
+revenue-generating purposes. You may not publish or redistribute copies or derivative works,
+including modified versions, as another product, repository, package, service, or training
+asset.
+
+For clarity, evaluation permission does not authorize the Software to control or influence a
+real person, animal, vehicle, medical device, clinical workflow, power system, industrial
+machine, or other consequential physical system.
+
+4. No patent or trademark license
+
+No patent rights, patent licenses, trademark rights, trade dress rights, or rights in project
+names or logos are granted by this license. Any such rights require a separate written grant.
+
+5. Ownership and notices
+
+The Software remains the property of its copyright holder. You may not remove or obscure
+copyright, license, attribution, claim-boundary, or safety notices.
+
+6. No endorsement or certification
+
+Use or evaluation of the Software does not imply endorsement, partnership, certification,
+regulatory approval, production readiness, safety approval, clinical validity, or authorization
+for deployment.
+
+7. Disclaimer
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, NON-INFRINGEMENT, ACCURACY, SAFETY, OR FITNESS FOR OPERATIONAL USE. TO THE
+MAXIMUM EXTENT PERMITTED BY LAW, THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR ANY CLAIM,
+DAMAGE, LOSS, OR OTHER LIABILITY ARISING FROM ACCESS TO, EVALUATION OF, OR USE OF THE
+SOFTWARE.
+
+8. Termination
+
+Rights granted under this license terminate automatically upon breach. Sections concerning
+ownership, prohibited uses, patent and trademark rights, disclaimers, and liability survive
+termination.
+
+For rights beyond evaluation, contact the copyright holder.

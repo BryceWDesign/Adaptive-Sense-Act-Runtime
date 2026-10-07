@@ -1,0 +1,29 @@
+{
+  "scenario": "synthetic_adaptive_surface",
+  "claim_boundary": "simulation_only",
+  "required_modalities": ["pressure", "posture"],
+  "signal_max_age_ms": 100.0,
+  "uncertainty": {
+    "derate_start": 0.25,
+    "stop": 0.65
+  },
+  "actuator_limits": {
+    "amplitude": {"min": 0.0, "max": 0.6, "deratable": true},
+    "frequency_hz": {"min": 40.0, "max": 220.0, "deratable": false},
+    "duration_s": {"min": 0.05, "max": 0.75, "deratable": true}
+  },
+  "planner_gain": 1.6,
+  "balance_tolerance": 0.035,
+  "initial_surface": {
+    "loads": {
+      "front_left": 0.44,
+      "front_right": 0.18,
+      "rear_left": 0.27,
+      "rear_right": 0.11
+    },
+    "response_gain": 0.8,
+    "posture_scale": 0.96,
+    "posture_offset_lr": 0.005,
+    "posture_offset_fb": -0.004
+  }
+}
